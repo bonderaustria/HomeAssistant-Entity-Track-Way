@@ -25,7 +25,24 @@ Karte zeichnet.
 >   purge_keep_days: 90
 > ```
 
-## Installation (HA OS)
+## Installation via HACS (empfohlen)
+
+Dieses Repo ist ein HACS-kompatibles **Lovelace-Plugin**. So bindest du es als
+*Custom Repository* ein:
+
+1. In HACS oben rechts auf **⋮ → Custom repositories**.
+2. **Repository:** die URL dieses Repos einfügen, **Type:** `Dashboard`
+   (bzw. `Lovelace`/`Plugin`, je nach HACS-Version) → **Add**.
+3. Danach in HACS nach **„Location History Card"** suchen → **Download**.
+4. HACS legt die Datei automatisch als Ressource an
+   (`/hacsfiles/HomeAssistant-Entity-Track-Way/location-history-card.js`).
+5. Browser hart neu laden (`Strg`+`F5`), dann die Karte wie unten beschrieben
+   zum Dashboard hinzufügen.
+
+> Für automatische Update-Benachrichtigungen in HACS lege ein GitHub-Release
+> mit einem Versions-Tag (z.B. `v1.2.0`) an.
+
+## Installation (manuell)
 
 1. Datei `location-history-card.js` nach `/config/www/` kopieren
    (Ordner ggf. anlegen). Erreichbar dann unter `/local/location-history-card.js`.
